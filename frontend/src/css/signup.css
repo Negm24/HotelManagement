@@ -1,0 +1,150 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+/* Container for the whole form */
+.container-whole {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 2%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-whole:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Header styles */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Choice buttons container */
+.choice-button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.choice-button {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.choice-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Input fields styles */
+.inputSign {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputSign:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Submit button styles */
+.submit-container button {
+    background-color: #3498db;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.submit-container button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.submit-container button:active {
+    transform: translateY(1px);
+}
+
+/* Inputs box holder for better spacing */
+.inputsBoxHolder {
+    margin-bottom: 20px;
+}
+
+/* Role and position selection container */
+.role-conatiner, .position-conatiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+select {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #3498db;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .container-whole {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .choice-button {
+        padding: 8px 15px;
+    }
+
+    .inputSign, .submit-container button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    select {
+        width: 50%;
+    }
+}
